@@ -19,7 +19,7 @@ h1 {
 }
 
 #container {
-    background: linear-gradient(rgb(11, 37, 26), rgb(22, 13, 53));
+    background: transparent;
     width: 75vw;
     max-width: 1000px;
     height: 50vh;
