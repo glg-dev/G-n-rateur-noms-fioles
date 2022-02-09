@@ -13,8 +13,7 @@ console.log(`${array1.length} contenants / ${array2.length} contenus = ${array1.
 
 containerButton.addEventListener("click", generateContainer)
 contentButton.addEventListener("click", generateContent)
-container.addEventListener("click", generateContainer)
-container.addEventListener("click", generateContent)
+container.addEventListener("click", generateBoth)
 
 
 function generateContainer() {
@@ -26,6 +25,11 @@ function generateContent() {
     let random2 = Math.random()*array2.length
     contenu.innerHTML = `<p>${array2[Math.floor(random2)]}</p>`
     // contenu.innerHTML = `<p>d'Arc en ciel</p>`
+}
+
+function generateBoth() {
+    generateContainer()
+    generateContent()
 }
 
 generateContainer()

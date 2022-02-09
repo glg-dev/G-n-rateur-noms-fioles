@@ -29,6 +29,7 @@ h1 {
     align-items: center;
     gap: 16px;
     box-shadow: -4px 4px 16px rgb(53, 23, 5);
+    font-size: 64px;
     cursor: pointer;
     transition: box-shadow .2s;
 }
@@ -62,6 +63,12 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) { 
+    body, #container {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-height: 800px) { 
     body {
         font-size: 32px;
     }
